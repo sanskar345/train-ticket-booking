@@ -1,0 +1,36 @@
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgb(150, 114, 114);
+}
+
+.invalid-detail {
+  margin-top: 5px;
+  color: red !important;
+}
+
+.invalid-control {
+  border-color: red;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 5px;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+}
+
+.brand-divider {
+  margin-top: 0 !important;
+}
+
+.upper-display{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-box{
+  margin-top: 5%;
+}

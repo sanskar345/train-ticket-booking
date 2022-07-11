@@ -1,0 +1,32 @@
+<section class="vh-100">
+
+  <div class="d-flex align-items-center justify-content-center h-100">
+
+
+    <div class="col-md-6 col-lg-4 col-xl-4">
+      <h1 class="brand">Admin Features</h1>
+      <div class="brand-divider divider d-flex align-items-center my-4">
+      </div>
+
+      <!-- Unbook All Seats Button -->
+
+      <div class="d-grid gap-2 mb-2">
+        <button
+        class="btn btn-danger btn-lg btn-block"
+        (click) = "unbookAllSeats()"
+        >Unbook All Seats</button>
+      </div>
+
+      <!-- Go To Home Button -->
+
+      <div class="d-grid gap-2">
+        <button
+        [routerLink]="['']"
+        class="btn btn-primary btn-lg btn-block"
+        (click) = "unbookAllSeats()"
+        >Go To Home</button>
+      </div>
+    </div>
+  </div>
+
+</section>
