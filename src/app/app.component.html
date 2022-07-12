@@ -1,7 +1,5 @@
 <div>
   <router-outlet></router-outlet>
 </div>
-
-<ngx-spinner name="searchSpinner" color = "#fff" size = "medium" type = "square-jelly-box" [fullScreen]="false" >
-  <p style="color: #fff" > Searching... </p>
-</ngx-spinner>
+<!-- loading spinner -->
+<mat-progress-spinner [mode]="'indeterminate'"  *ngIf="loading$ | async"></mat-progress-spinner>

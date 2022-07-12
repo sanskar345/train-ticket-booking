@@ -6,15 +6,6 @@
   background: rgb(150, 114, 114);
 }
 
-.invalid-detail {
-  margin-top: 5px;
-  color: red !important;
-}
-
-.invalid-control {
-  border-color: red;
-}
-
 .brand {
   text-align: center;
   margin-bottom: 5px;

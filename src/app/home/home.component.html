@@ -1,5 +1,5 @@
 <section class="vh-100">
-
+    <!-- My Information -->
     <div class="alert alert-warning upper-display" role="alert">
       <div>
         Sanskar Soni
@@ -19,6 +19,8 @@
         </div>
         <form [formGroup] = "bookingForm">
 
+          <!-- Inputs -->
+
           <div class="form-outline mb-4">
             <label class="form-label" for="form1Example13">Full Name</label>
             <input
@@ -26,7 +28,7 @@
             class="form-control form-control-lg"
             [ngClass]="{'invalid-control': bookingFormControls['name'].invalid && bookingFormControls['name'].touched}"
             formControlName = "name"
-            autocomplete="off"
+            autocomplete="on"
             name = "userName"
             />
             <div class="invalid-detail" *ngIf="bookingFormControls['name'].invalid && bookingFormControls['name'].touched">
@@ -42,7 +44,7 @@
             class="form-control form-control-lg"
             [ngClass]="{'invalid-control': bookingFormControls['contact'].invalid && bookingFormControls['contact'].touched}"
             formControlName = "contact"
-            autocomplete="off"
+            autocomplete="on"
             name = "contact"
             />
             <div class="invalid-detail" *ngIf="bookingFormControls['contact'].invalid && bookingFormControls['contact'].touched">
@@ -50,6 +52,8 @@
             </div>
 
           </div>
+
+          <!-- Seats Required Input -->
 
           <div class="form-outline mb-4">
             <label class="form-label" for="form1Example13">Seats Required</label>
@@ -69,8 +73,10 @@
 
           </div>
 
-
         </form>
+
+        <!-- button to book -->
+
         <div class="d-grid gap-2">
           <button
           class="btn btn-primary btn-lg btn-block"
@@ -82,3 +88,5 @@
     </div>
 
 </section>
+
+
